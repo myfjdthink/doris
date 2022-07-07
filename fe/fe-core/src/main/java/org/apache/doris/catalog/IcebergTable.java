@@ -132,7 +132,7 @@ public class IcebergTable extends Table {
         String storagePrefix = strings[0].split(":")[0];
         if (storagePrefix.equalsIgnoreCase("s3")) {
             this.storageType = StorageBackend.StorageType.S3;
-        } else if (storagePrefix.equalsIgnoreCase("hdfs")) {
+        } else if (storagePrefix.equalsIgnoreCase("hdfs") || storagePrefix.equalsIgnoreCase("gs")) {
             this.storageType = StorageBackend.StorageType.HDFS;
         } else {
             throw new UserException("Not supported storage type: " + storagePrefix);

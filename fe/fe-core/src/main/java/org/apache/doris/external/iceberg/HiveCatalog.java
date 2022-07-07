@@ -49,6 +49,8 @@ public class HiveCatalog implements IcebergCatalog {
         // initialize hive catalog
         Map<String, String> catalogProperties = new HashMap<>();
         catalogProperties.put("uri", icebergProperty.getHiveMetastoreUris());
+        // hard code for test, should be read config from icebergProperty
+        catalogProperties.put("io-impl", "org.apache.iceberg.gcp.gcs.GCSFileIO");
         hiveCatalog.initialize("hive", catalogProperties);
     }
 

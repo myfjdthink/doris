@@ -181,7 +181,7 @@ under the License.
         <!-- ATTN: avro version must be consistent with Iceberg version -->
         <!-- Please modify iceberg.version and avro.version together,
          you can find avro version info in iceberg mvn repository -->
-        <iceberg.version>0.12.0</iceberg.version>
+        <iceberg.version>0.13.2</iceberg.version>
         <avro.version>1.10.1</avro.version>
         <!-- ATTN: avro version must be consistent with Iceberg version -->
         <parquet.version>1.10.1</parquet.version>
@@ -758,6 +758,13 @@ under the License.
             <dependency>
                 <groupId>org.apache.iceberg</groupId>
                 <artifactId>iceberg-core</artifactId>
+                <version>${iceberg.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.iceberg/iceberg-gcp -->
+            <dependency>
+                <groupId>org.apache.iceberg</groupId>
+                <artifactId>iceberg-gcp</artifactId>
                 <version>${iceberg.version}</version>
             </dependency>
 

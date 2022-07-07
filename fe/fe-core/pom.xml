@@ -591,6 +591,12 @@ under the License.
 
         <dependency>
             <groupId>org.apache.iceberg</groupId>
+            <artifactId>iceberg-gcp</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.iceberg</groupId>
             <artifactId>iceberg-hive-metastore</artifactId>
             <scope>provided</scope>
         </dependency>
